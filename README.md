@@ -20,7 +20,9 @@ rm lrs2_language_model.zip`
 --data_path <directory containing videos> \
 --data_list <path to list.txt>  \
 --graph_type infer`
+
 This will extract the feature vector from the video and save it in the same folder as aaa.mp4.npy
+
 5. Run the following command next -
 
 `python concatenate_features.py <fake_rootdir> <real_rootdir>`
