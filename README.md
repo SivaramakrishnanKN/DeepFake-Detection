@@ -14,10 +14,10 @@ rm lrs2_language_model.zip`
 
 3. Set the data_path as the folder where the video is saved and data_list as the location where the list of videos along with their caption is stored and then run the following command. Make sure the environment is running on tensorflow 1.x.
 
-`python main.py \
---lip_model_path ./LipReading/models/lrs2_lip_model \
---data_path <directory containing videos> \
---data_list <path to list.txt>  \
+`python ./LipReadingmain.py 
+--lip_model_path ./LipReading/models/lrs2_lip_model 
+--data_path <directory containing videos> 
+--data_list <path to list.txt>  
 --graph_type infer`
 
 This will extract the feature vector from the video and save it in the same folder as aaa.mp4.npy
