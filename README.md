@@ -3,10 +3,16 @@ You can either run the main.py root directory of the project with the required a
 
 1. Run `./LipExtraction.py` to extract the face from each frame and split the video into chunks of 1sec.
 2. Run `./list_generator.py` to create the "list.txt" file. This list will contain the location of all videos upon which the lip reading features will be extracted.
-2. Run the following commands from ".Pipeline1/LipReading/"
-`conda activate tf1`
-3. Set the data_path as the folder where the video is saved and data_list as the location where the list of videos along with their caption is stored and then run the following command
-ex:
+2. Run the following commands from ".Pipeline1/LipReading/models"
+'wget http://www.robots.ox.ac.uk/~vgg/research/deep_lip_reading/models/lrs2_lip_model.zip && \
+unzip lrs2_lip_model.zip && \
+rm lrs2_lip_model.zip
+
+wget http://www.robots.ox.ac.uk/~vgg/research/deep_lip_reading/models/lrs2_language_model.zip && \
+unzip lrs2_language_model.zip && \
+rm lrs2_language_model.zip'
+
+3. Set the data_path as the folder where the video is saved and data_list as the location where the list of videos along with their caption is stored and then run the following command. Make sure the environment is running on tensorflow 1.x.
 `python main.py \
 --lip_model_path ./LipReading/models/lrs2_lip_model \
 --data_path <directory containing videos> \
