@@ -1,0 +1,1 @@
+python main.py --lip_model_path models/lrs2_lip_model  --data_path D:\Academics\Year4\TS\Data\DFDC\train_videos_mouth --data_list D:\Academics\Year4\TS\Data\DFDC\train_videos_mouth\list.txt  --graph_type infer

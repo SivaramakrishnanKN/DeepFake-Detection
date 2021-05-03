@@ -1,0 +1,11 @@
+tensorflow-gpu==2.3.1
+numpy
+av
+editdistance
+configargparse
+six
+
+moviepy==0.2.3.5
+opencv-python
+imageio-ffmpeg
+
